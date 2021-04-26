@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "import compile; compile('$PYFILE', '$PYFILE', 'exec')"
+python3 -c "import compile; compile('$PYFILE', '$PYFILEc', 'exec')"
