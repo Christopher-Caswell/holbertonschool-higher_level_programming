@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+os.chmod("$PYCODE", stat.S_IXUSR)
+python $PYCODE
