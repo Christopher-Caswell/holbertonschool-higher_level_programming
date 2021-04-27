@@ -5,7 +5,7 @@ if number < 0:
     nimbr = number * -1
 else:
     nimbr = number
-l = nimbr % 10
+l = (nimbr % 10) * -1
 n = number
 if l > 5:
     print("Last digit of {:d} is {:d} and is greater than 5".format(n, l))
