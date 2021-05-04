@@ -8,5 +8,7 @@ def safe_print_division(a, b):
         print("Inside result: {}".format(result2))
     except:
         result2 = None
+    except not isinstance(b, int):
+        result2 = None
     finally:
         return result2
