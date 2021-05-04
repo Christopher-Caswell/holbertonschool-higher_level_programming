@@ -2,11 +2,12 @@
 
 """Module defining a private square """
 
+
 class Square:
     """Show me the private Square"""
     def __init__(self, size=0):
         """A protection before the computation"""
-        if not isinstance(size,int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         """The actual calculation"""
         else:

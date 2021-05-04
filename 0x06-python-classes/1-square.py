@@ -2,6 +2,7 @@
 
 """Module de Square"""
 
+
 class Square:
     """Let's make a private Square"""
     def __init__(self, size):
