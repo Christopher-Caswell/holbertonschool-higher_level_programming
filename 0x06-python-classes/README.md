@@ -1,0 +1,1 @@
+> This repo is reserved for the curriculm tasks in regard to semester two in study with Holberton
