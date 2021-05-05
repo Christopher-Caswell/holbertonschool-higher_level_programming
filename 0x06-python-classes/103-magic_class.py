@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import math
-"""This is a bytecode replication puzzle"""
+"""Module is a bytecode replication puzzle."""
 
 
 class MagicClass():
