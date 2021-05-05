@@ -1,21 +1,17 @@
 #!/usr/bin/python3
-"""This module defines a private square."""
+"""Module defines a private Square."""
 
 
 class Square:
-    """Show me the private Square"""
+    """Show me a private square"""
 
-    def __init__(self, size=0):
-        """A protection before the computation"""
+    def ___init__(self, size=0):
+        """Defines the square to be of size"""
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        """The actual calculation"""
-
         else:
             if size < 0:
                 raise ValueError("size must be >= 0")
             else:
-                """Lastly, declare the value to define the square"""
-
                 self.__size = size
