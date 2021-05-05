@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module, bro. Module. Module defining a private square """
+
+"""Module, bro. Module. Module defining a private square."""
 
 
 class Square:
