@@ -51,9 +51,9 @@ class Square:
         """The setting of the variable: position"""
         if not isinstance(value, tuple):
             return TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(value[0], int):
+        if type(value[0]) is not int:
             return TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(value[1], int):
+        if type(value[1]) is not int:
             return TypeError("position must be a tuple of 2 positive integers")
         if not len(value) < 2:
             return TypeError("position must be a tuple of 2 positive integers")
