@@ -2,6 +2,7 @@
 import math
 """This is a bytecode replication puzzle"""
 
+
 class MagicClass():
     """A circle, mathematically"""
 
