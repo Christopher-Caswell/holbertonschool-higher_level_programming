@@ -41,12 +41,10 @@ class Square:
                 print("#", end="")
             print()
 
-    @property
     def position(self):
         """A positional posit"""
         return self.position
 
-    @position.setter
     def position(self, value):
         """The setting of the variable: position"""
         if not isinstance(value, tuple):
