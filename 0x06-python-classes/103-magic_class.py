@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-import math
+
 """Module is a bytecode replication puzzle."""
 
+
+import math
 
 class MagicClass():
     """A circle, mathematically"""
