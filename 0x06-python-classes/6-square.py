@@ -44,11 +44,11 @@ class Square:
     @property
     def position(self):
         """A positional posit"""
-        return self.position
+        return self.__position
 
     @position.setter
     def position(self, value):
-        """The setting of the variable"""
+        """The setting of the variable: position"""
         if not isinstance(value, tuple):
             return TypeError("position must be a tuple of 2 positive integers")
         if not isinstance(value[0], int):
