@@ -44,7 +44,7 @@ class Square:
     @property
     def position(self):
         """A positional posit"""
-        return self.__position
+        return self.position
 
     @position.setter
     def position(self, value):
