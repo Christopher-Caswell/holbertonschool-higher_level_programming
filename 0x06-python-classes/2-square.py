@@ -5,7 +5,7 @@
 class Square:
     """Show me a private square"""
 
-    def ___init__(self, size=0):
+    def __init__(self, size=0):
         """Defines the square to be of size"""
 
         if not isinstance(size, int):
