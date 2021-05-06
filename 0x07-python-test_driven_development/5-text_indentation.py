@@ -32,4 +32,4 @@ def text_indentation(text):
                     (text[i - 1] is not chr(63)) and\
                     (text[i - 1] is not chr(58)):
                 x += text[i]
-    print("{}".format(x))
+    print("{}{}".format(x, text[-1]))

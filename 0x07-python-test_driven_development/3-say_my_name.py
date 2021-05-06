@@ -13,4 +13,4 @@ def say_my_name(first_name, last_name=""):
         return TypeError("last_name must be a string")
         """Can't stop the func"""
 
-    print("My name is {}{}".format(first_name, last_name))
+    print("My name is {} {}".format(first_name, last_name))

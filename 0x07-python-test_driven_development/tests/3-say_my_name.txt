@@ -1,0 +1,16 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name(, "Womp")
+  File "<stdin>", line 1
+    say_my_name(, "Womp")
+                ^
+SyntaxError: invalid syntax
+>>> say_my_name("Keyser", "Soze")
+My name is Keyser Soze
+>>> say_my_name("Keyser", True)
+TypeError('last_name must be a string',)
+>>> say_my_name("Keyser", 432)
+TypeError('last_name must be a string',)
+>>> say_my_name("Keyser", float('inf'))
+TypeError('last_name must be a string',)
+>>> say_my_name("Keyser", "Permanente")
+My name is Keyser Permanente
