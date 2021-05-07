@@ -63,13 +63,18 @@ class Rectangle:
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """Returns a printable version of rectangle"""
-        if self.width == 0 or self.height == 0:
-            return ""
         z = ""
+        # g = 0
+        # if g != (self.height) and g != 0:
+        #     z += chr(10)
         for x in range(self.height):
             for y in range(self.width):
                 z += "#"
-            z += chr(10)
+            if x != self.height - 1:
+                z += chr(10)
         # z += chr(10)
         return z
+
+    def __repr__(self):
+        """The rectangle outputs a string of itself"""
+        return "Rectangle({}, {})".format(self.width, self.height)
