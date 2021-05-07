@@ -73,7 +73,3 @@ class Rectangle:
             if x != self.height - 1:
                 z += chr(10)
         return z
-
-    def __repr__(self):
-        """The rectangle outputs a string of itself"""
-        return "Rectangle({}, {})".format(self.width, self.height)
