@@ -7,4 +7,5 @@ That defines a rectangle
 
 
 class Rectangle:
+    """This is a class"""
     pass
