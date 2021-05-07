@@ -63,16 +63,15 @@ class Rectangle:
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """A printable output of the rectangle"""
+        if self.height == 0 or self.width == 0:
+            return ""
         z = ""
-        # g = 0
-        # if g != (self.height) and g != 0:
-        #     z += chr(10)
         for x in range(self.height):
             for y in range(self.width):
                 z += "#"
             if x != self.height - 1:
                 z += chr(10)
-        # z += chr(10)
         return z
 
     def __repr__(self):
