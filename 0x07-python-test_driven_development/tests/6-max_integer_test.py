@@ -5,7 +5,7 @@ My Little Unittest: Testing is Lyfe
 
 
 import unittest
-max_integer = __import__('max_integer').max_integer
+max_integer = __import__('6_max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
 
