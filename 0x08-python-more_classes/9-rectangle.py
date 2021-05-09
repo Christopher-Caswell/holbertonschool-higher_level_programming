@@ -103,4 +103,5 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Returns a square when only one parameter is passed"""
-        return cls(size, size)
+        confusingly_relevant_variable = cls(size, size)
+        return confusingly_relevant_variable
