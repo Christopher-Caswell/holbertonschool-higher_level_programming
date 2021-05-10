@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-"""Create a locked class"""
-"""Locked class is to protect the books"""
-"""Dont go stealing dictionaries"""
+"""
+Create a locked class
+Locked class is to protect the books
+Dont go stealing dictionaries
+"""
 
 
 class LockedClass:
