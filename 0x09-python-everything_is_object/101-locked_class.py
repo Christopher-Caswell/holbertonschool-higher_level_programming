@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 
-"""
-Create a locked class
-wherein the only malleable
-variable is first_name
-Words to appease an ambiguous checker
-"""
+"""Create a locked class"""
 
 
 class LockedClass:
