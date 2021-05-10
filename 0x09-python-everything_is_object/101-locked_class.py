@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Create a locked class
 wherein the only malleable
