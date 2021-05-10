@@ -5,6 +5,8 @@ wherein the only malleable
 variable is first_name
 """
 
+
 class LockedClass:
     """A class for the class of it"""
+
     __slots__ = ["first.name"]
