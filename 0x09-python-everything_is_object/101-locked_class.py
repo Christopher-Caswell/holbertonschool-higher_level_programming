@@ -8,4 +8,4 @@ variable is first_name
 
 class LockedClass():
     """A class for the class of it"""
-    __slots = "first.name"
+    __slots__ = "first.name"
