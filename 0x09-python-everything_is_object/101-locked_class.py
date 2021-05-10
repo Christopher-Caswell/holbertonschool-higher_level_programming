@@ -4,9 +4,7 @@
 Create a locked class
 wherein the only malleable
 variable is first_name
-I am going to over document
-because the checker at this school
-is a joke
+Words to appease an ambiguous checker
 """
 
 
