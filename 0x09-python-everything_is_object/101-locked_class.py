@@ -4,6 +4,7 @@
 """Locked class is to protect the books"""
 """Dont go stealing dictionaries"""
 
+
 class LockedClass:
     """A class for the class of it"""
 
