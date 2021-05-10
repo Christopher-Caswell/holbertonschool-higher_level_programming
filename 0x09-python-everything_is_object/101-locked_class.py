@@ -7,7 +7,7 @@ Dont go stealing dictionaries
 """
 
 
-class LockedClass:
+class LockedClass():
     """A class for the class of it"""
 
-    __slots = ["first.name"]
+    __slots__ = ["first.name"]
