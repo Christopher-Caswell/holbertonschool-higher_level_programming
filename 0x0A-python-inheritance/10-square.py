@@ -17,4 +17,4 @@ class Square(Rectangle):
 
     def area(self):
         """Hipness is calculated thusly: 2(b**2)"""
-        return (square.__size * square.__size)
+        return (self.__size * self.__size)
