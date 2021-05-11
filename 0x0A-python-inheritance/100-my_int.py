@@ -14,8 +14,8 @@ class MyInt(int):
 
     def __ne__(self, other):
         """Read 1 is not other"""
-        return self.real != other
+        return self.real == other
 
     def __eq__(self, other):
         """Red 3 is definitely other"""
-        return self.real == other
+        return self.real != other
