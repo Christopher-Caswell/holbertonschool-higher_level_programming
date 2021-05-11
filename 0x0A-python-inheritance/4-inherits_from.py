@@ -8,5 +8,5 @@ instance of a class that inherited
 
 def inherits_from(obj, a_class):
     """Doc line still tryna trick checker"""
-    return (isinstance(type(obj), a_class) and
+    return (issubclass(type(obj), a_class) and
             (type(obj) != a_class))
