@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Write a function that returns True if
 instance of a class that inherited

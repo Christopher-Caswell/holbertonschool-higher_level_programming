@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Write a class My_List that inherits from list
 Public instance meth: def print_sorted(self):
