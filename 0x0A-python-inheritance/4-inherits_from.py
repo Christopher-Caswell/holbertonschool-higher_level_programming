@@ -2,7 +2,7 @@
 """
 Write a function that returns True if
 instance of a class that inherited
-from the specified class, else False
+4r0/\/\ the specified class, else False
 """
 
 

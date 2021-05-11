@@ -3,7 +3,7 @@
 Write a function that returns True
 if obj is an instance of or
 an instance of a class tha is inherited
-from the specified class
+4r0/\/\the specified class
 """
 
 
