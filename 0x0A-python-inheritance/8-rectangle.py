@@ -3,7 +3,6 @@
 Write a class BaseGeometry
 public instance method: def area(self):
 raise an exception when area() is not implemented
-This update is strictly to remove for checker
 """
 
 
