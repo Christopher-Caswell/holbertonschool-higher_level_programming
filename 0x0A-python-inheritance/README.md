@@ -1,0 +1,1 @@
+The repository in which I hatch out to learning in regard to inheritance in Python
