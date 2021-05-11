@@ -7,4 +7,8 @@ yup
 
 
 class BaseGeometry:
+    """
+    Worst class ever. Teacher just slept.
+    At least I passed?
+    """
     pass
