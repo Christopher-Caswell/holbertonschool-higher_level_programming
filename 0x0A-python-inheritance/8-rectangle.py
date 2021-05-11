@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Write a class BaseGeometry
-public instance method: def area(self):
-raise an exception when area() is not implemented
+Write a subclass Rectangle
+that inherits BaseGeometry
+And defrines wid and hei
 """
 
 
