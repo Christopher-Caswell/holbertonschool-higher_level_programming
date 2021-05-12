@@ -1,0 +1,28 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> MyList.print_sorted(1, 1)
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+>>> MyList.print_sorted([1, 1], [1, 1])
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+>>> MyList.print_sorted(None)
+Traceback (most recent call last):
+TypeError: 'NoneType' object is not iterable
+>>> MyList.print_sorted(True)
+Traceback (most recent call last):
+TypeError: 'bool' object is not iterable
+>>> MyList.print_sorted(float('inf'))
+Traceback (most recent call last):
+TypeError: 'float' object is not iterable
+>>> MyList.print_sorted([5, 4, int(3.14159625), 6])
+[3, 4, 5, 6]
+>>> MyList.print_sorted([])
+[]
+>>> MyList.print_sorted([-6, -5, 0, -98])
+[-98, -6, -5, 0]
+>>> MyList.print_sorted()
+Traceback (most recent call last):
+TypeError: print_sorted() missing 1 required positional argument: 'self'
+>>> MyList.print_sorted([int('x')])
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'x'

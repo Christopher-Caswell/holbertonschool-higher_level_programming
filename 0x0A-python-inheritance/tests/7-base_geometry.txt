@@ -1,0 +1,35 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("Value", 10)
+>>> bg.integer_validator("Value", 5.89)
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.integer_validator("Value", int(5.89))
+>>> bg.integer_validator("Value", "")
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.integer_validator("Not Value", 99)
+>>> bg.integer_validator("Value", 0, 0)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+>>> bg.integer_validator("Value", 0, a)
+Traceback (most recent call last):
+NameError: name 'a' is not defined
+>>> bg.integer_validator("Value", 0, 'a')
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+>>> bg.integer_validator("Value", (0,))
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.integer_validator("Value", True)
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.integer_validator("Value", "True")
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("Value", -10)
+Traceback (most recent call last):
+ValueError: Value must be greater than 0
