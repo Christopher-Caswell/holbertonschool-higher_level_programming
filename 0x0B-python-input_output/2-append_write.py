@@ -9,4 +9,4 @@ If the file doesnt exist, it should be created
 def append_write(filename="", text=""):
     """add stuff to the end, bruh"""
     with open(filename, 'a', encoding="UTF8") as x:
-        x.append(text)
+        return x.write(text)
