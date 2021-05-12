@@ -33,3 +33,15 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 >>> bg.integer_validator("Value", -10)
 Traceback (most recent call last):
 ValueError: Value must be greater than 0
+>>> bg.integer_validator("Value", 0)
+Traceback (most recent call last):
+ValueError: Value must be greater than 0
+>>> bg.integer_validator("Value", [10])
+Traceback (most recent call last):
+TypeError: Value must be an integer
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+>>> bg.integer_validator("Value", None)
+Traceback (most recent call last):
+TypeError: Value must be an integer
