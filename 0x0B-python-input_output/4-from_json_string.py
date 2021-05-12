@@ -2,7 +2,7 @@
 import json
 """
 Write a function that returns an object
-(Python data structure) represented by a JSON string:
+Python data structure) represented by a JSON string:
 No need to manage exceptions
 """
 
