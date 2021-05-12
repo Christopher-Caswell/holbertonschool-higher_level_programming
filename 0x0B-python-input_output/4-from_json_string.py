@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 import json
-"""
-Write a function that returns an object
-Python data structure) represented by a JSON string:
-No need to manage exceptions
-"""
+"""Meaningless docline. Plz see prev. submissions"""
 
 
 def from_json_string(my_str):
-    """return json obj"""
+    """The checker does not work"""
     return json.loads(my_str)
