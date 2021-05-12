@@ -45,3 +45,6 @@ Exception: area() is not implemented
 >>> bg.integer_validator("Value", None)
 Traceback (most recent call last):
 TypeError: Value must be an integer
+>>> bg.integer_validator("Value", {1, 1})
+Traceback (most recent call last):
+TypeError: Value must be an integer
