@@ -15,5 +15,5 @@ def append_after(filename="", search_string="", new_string=""):
             if search_string in y:
                 """I love 'in' but do not like the .action format"""
                 z.append(new_string)
-    with open(filename, 'x') as x:
+    with open(filename, 'w') as x:
         x.write("".join(y))
