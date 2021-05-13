@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Write a class student that defines the student
 by age, name, name, and also name
