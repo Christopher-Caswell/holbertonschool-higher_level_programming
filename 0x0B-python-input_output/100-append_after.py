@@ -8,7 +8,7 @@ after each line containing a specific string
 def append_after(filename="", search_string="", new_string=""):
     """Append new strings in location"""
     z = []
-    with open(filename, 'r') as x:
+    with open(filename, 'r+') as x:
         """Read to new string"""
         for y in x.readlines():
             z.append(y)
