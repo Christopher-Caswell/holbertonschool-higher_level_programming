@@ -18,4 +18,4 @@ class Student:
 
     def to_json(self):
         """Return all info about this moto"""
-        return self.vars
+        return vars(self)
