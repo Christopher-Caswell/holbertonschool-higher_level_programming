@@ -102,6 +102,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """alters return such that it kicks certain parameters"""
         return ("[Rectangle] (<{:d}>) {:d}/{:d} - {}/{}".format(
                 self.__id, self.__x, self.__y,
                 self.__width, self.__height))
