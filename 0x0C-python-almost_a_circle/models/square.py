@@ -5,6 +5,8 @@ weren't born every time it plays
 Also, inherits from Rectangle for obvious reasons
 """
 
+from models.base import Base
+
 
 class Square(Rectangle):
     """To be fair, I'm not a fan of brass"""

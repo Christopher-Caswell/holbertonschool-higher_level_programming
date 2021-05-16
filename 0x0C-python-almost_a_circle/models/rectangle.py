@@ -5,6 +5,8 @@ Is the basis for the logic that is used by
 Square later
 """
 
+from models.base import Base
+
 
 class Rectangle(Base):
     """Have some class"""
