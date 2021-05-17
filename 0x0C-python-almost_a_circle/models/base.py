@@ -15,15 +15,22 @@ to the public instance attribute id
 """
 
 
+import json
+
+
 class Base:
     """Fragile. Don't drop"""
 
+    __nb_objects = 0
+
     def __init__(self, id=None):
-        __nb_objects = 0
+        """Base constructor"""
+
         if id is None:
-            __nb_objects += 1
-            id = __nb_objects
-        self.id = id
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
+        else:
+            self.id = id
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -49,6 +56,9 @@ class Base:
             return mtlist
         with open(filename, encoding='UTF8') as womp:
             return json.loads(json_string)
+
+#    if __name__ == '__main__':
+#        unittest.main()
 """
 @classmethod
 def load_from_file(cls):

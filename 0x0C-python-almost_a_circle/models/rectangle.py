@@ -13,17 +13,25 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Opening credits for the hit of the year"""
-        if type(height) is not int:
-            return TypeError("Height needs to be an int")
-        if height is < 1:
-            return ValueError("Height needs to be greater than 0")
-        if type(width) is not int:
-            return TypeError("Width needs to be an int")
-        if width is < 1:
-            return ValueError("Width needs to be greater than 0")
+#       if type(height) is not int:
+#           return TypeError("Height needs to be an int")
+#       if height < 1:
+#           return ValueError("Height needs to be greater than 0")
+#       if type(width) is not int:
+#           return TypeError("Width needs to be an int")
+#       if width < 1:
+#           return ValueError("Width needs to be greater than 0")
+#       if type(x) is not int:
+#           return TypeError("X needs to be an int")
+#       if x < 1:
+#           return ValueError("X needs to be greater than 0")
+#       if type(y) is not int:
+#           return TypeError("Y needs to be an int")
+#       if y < 1:
+#           return ValueError("Y needs to be greater than 0")
         super().__init__(id)
-        self.__height = height
-        self.__width = width
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
 
@@ -34,13 +42,13 @@ class Rectangle(Base):
         He hasn't got errors all over him
         """
 
-        if name is "x" or "y":
+        if name is "x" or name is "y":
             if value < 0:
-                raise ValueError("{:s} must be >= 0".format(name))
+                raise ValueError("{} must be >= 0".format(name))
         if type(value) is not int:
-            raise TypeError("{:s} must be an integer".format(name))
-        if name is not "x" or "y" and value <= 0:
-            raise ValueError("{:s} must be > 0".format(name))
+            raise TypeError("{} must be an integer".format(name))
+        else:
+            raise ValueError("{} must be > 0".format(name))
 
     @property
     def height(self):
@@ -50,8 +58,8 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """Sets height"""
-        self.integer_validator("height", height)
-        self.__height = height
+        self.integer_validator("height", value)
+        self.__height = value
 
     @property
     def width(self):
@@ -61,8 +69,8 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """Sets width"""
-        self.integer_validator("width", width)
-        self.__width = width
+        self.integer_validator("width", value)
+        self.__width = value
 
     @property
     def x(self):
@@ -72,8 +80,8 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """sets x"""
-        self.integer_validator("x", x)
-        self.__x = x
+        self.integer_validator("x", value)
+        self.__x = value
 
     @property
     def y(self):
@@ -83,8 +91,8 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """sets y"""
-        self.integer_validator("y", y)
-        self.__y = y
+        self.integer_validator("y", value)
+        self.__y = value
 
     def area(self):
         """Return the area of the rectangle"""
