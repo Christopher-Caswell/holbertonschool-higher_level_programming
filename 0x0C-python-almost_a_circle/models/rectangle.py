@@ -47,7 +47,7 @@ class Rectangle(Base):
                 raise ValueError("{} must be >= 0".format(name))
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
-        else:
+        else if name is "width" or name is "height":
             if value <= 0:
                 raise ValueError("{} must be > 0".format(name))
 
