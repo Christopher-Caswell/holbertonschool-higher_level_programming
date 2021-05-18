@@ -114,7 +114,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """alters return such that it kicks certain parameters"""
-        return ("[Rectangle] (<{}>) {}/{} - {}/{}".format(
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.x, self.y,
                 self.width, self.height))
 
