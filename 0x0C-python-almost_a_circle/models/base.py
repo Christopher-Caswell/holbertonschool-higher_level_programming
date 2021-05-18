@@ -43,10 +43,12 @@ class Base:
     def save_to_file(cls, list_objs):
         """Save list_objs to json string"""
         mtlist = []
-        if list_objs is None:
-            return mtlist
-        with open(filename, 'w', encoding='UTF8') as womp:
-            return womp.write(json.dumps(list_objs))
+        mtfile = cls.__name__ + ".json"
+        if list_objs:
+            for increment in list_objs:
+                mtlist.append(increment.to_dictionary())
+        with open(mtfile, 'w', encoding='UTF8') as womp:
+            return womp.write(cls.to_json_string(mtlist))
 
     @staticmethod
     def from_json_string(json_string):
@@ -54,7 +56,7 @@ class Base:
         mtlist = []
         if json_string is None:
             return mtlist
-        with open(filename, encoding='UTF8') as womp:
+        else:
             return json.loads(json_string)
 
 #    if __name__ == '__main__':
