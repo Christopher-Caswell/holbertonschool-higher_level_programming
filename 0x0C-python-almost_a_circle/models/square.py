@@ -33,6 +33,28 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+#    @property
+#    def x(self):
+#        """x getter"""
+#        return self.x
+
+#    @x.setter
+#    def x(self, value):
+#        """x setter"""
+#        super().integer_validator("x", value)
+#        self.x = value
+
+#    @property
+#    def y(self):
+#        """y getter"""
+#        return self.y
+
+#    @y.setter
+#    def y(self, value):
+#        """y setter"""
+#        super().integer_validator("y", value)
+#        self.y = value
+
     def update(self, *args, **kwargs):
         """update the Square with new args as attr"""
         if args is () or args is None:
