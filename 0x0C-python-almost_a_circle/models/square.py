@@ -5,7 +5,7 @@ weren't born every time it plays
 Also, inherits from Rectangle for obvious reasons
 """
 
-from models.base import Base
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -19,12 +19,12 @@ class Square(Rectangle):
     def __str__(self):
         """change what is returned, yo"""
         return ("[Square] ({}) {}/"
-                "{} - {}".format(self.id, self.x, self.y, self.size))
+                "{} - {}".format(self.id, self.x, self.y, self.width))
 
     @property
-    def size(self, value):
+    def size(self):
         """Hippity hoppity, size getting property"""
-        return self.size
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -37,7 +37,7 @@ class Square(Rectangle):
         """update the Square with new args as attr"""
         if args is () or args is None:
             for x in args:
-                setattr(self, key, kwargs[x])
+                setattr(self, x, kwargs[x])
         else:
             butes = ["id", "size", "x", "y"]
             for x in range(len(args)):
@@ -45,4 +45,8 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """Return the dict, tho"""
-        return dir(self)
+        book = dict()
+        items = ["id", "size", "x","y"]
+        for s in items:
+            book[s] = getattr(self, s)
+        return book

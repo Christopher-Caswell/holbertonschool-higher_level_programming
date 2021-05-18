@@ -105,7 +105,7 @@ class Rectangle(Base):
             print()
         """y established as downward printed position"""
         for b in range(self.__height):
-            for c in len(self.__x):
+            for c in range(self.__x):
                 print(" ", end="")
                 """x established as forward spaces from side bar"""
             for d in range(self.__width):
@@ -114,21 +114,36 @@ class Rectangle(Base):
 
     def __str__(self):
         """alters return such that it kicks certain parameters"""
-        return ("[Rectangle] (<{:d}>) {:d}/{:d} - {}/{}".format(
-                self.__id, self.__x, self.__y,
-                self.__width, self.__height))
+        return ("[Rectangle] (<{}>) {}/{} - {}/{}".format(
+                self.id, self.x, self.y,
+                self.width, self.height))
 
     def update(self, *args, **kwargs):
         """Assigns arguments to attributes"""
 
         if args is () or args is None:
             for x in kwargs:
-                setattr(self, key, kwargs[x])
+                setattr(self, x, kwargs[x])
         else:
             butes = ["id", "width", "height", "x", "y"]
-            for x in range(len(kwargs)):
+            for x in range(len(args)):
                 setattr(self, butes[x], args[x])
 
     def to_dictionary(self):
         """Thar be dicts afoot"""
-        return dir(self)
+#        strings = {}
+#        for items in dir(self):
+#            w = self.get(items)
+#            if (items is "width" or
+#                    "height" or "size" or
+#                    "id" or "x" or "y"):
+#                womp[items] = w
+#        return womp
+#        keys = ["id","x", "size", "y", "width", "height"]
+#        flter =  dict(zip(keys, [self.dict[k] for k in keys]))
+#        return flter
+        book = dict()
+        items = ["id", "width", "height", "x","y"]
+        for s in items:
+            book[s] = getattr(self, s)
+        return book
