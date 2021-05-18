@@ -57,13 +57,13 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """update the Square with new args as attr"""
-        if args is () or args is None:
-            for x in args:
-                setattr(self, x, kwargs[x])
-        else:
-            butes = ["id", "size", "x", "y"]
+        butes = ["id", "size", "x", "y"]
+        if args:
             for x in range(len(args)):
                 setattr(self, butes[x], args[x])
+        else:
+            for x, y in kwargs.items():
+                setattr(self, x, y)
 
     def to_dictionary(self):
         """Return the dict, tho"""

@@ -60,3 +60,42 @@ if __name__ == "__main__":
     r2.update(**r1_dictionary)
     print(r2)
     print(r1 == r2)
+""" 9-main """
+from models.square import Square
+
+print("9")
+if __name__ == "__main__":
+
+    s1 = Square(5)
+    print(s1)
+    print(s1.area())
+    s1.display()
+
+    print("---")
+
+    s2 = Square(2, 2)
+    print(s2)
+    print(s2.area())
+    s2.display()
+
+    print("---")
+
+    s3 = Square(3, 1, 3)
+    print(s3)
+    print(s3.area())
+    s3.display()
+print()
+
+""" Check """
+from models.square import Square
+
+s = Square(5, 1, 4, 3)
+s.update(id=89, y=2)
+
+if s.id != 89:
+    print("ID of the Square must be updated to 89: {}".format(s.id))
+    exit(1)
+    
+print("OK", end="")
+
+print()
