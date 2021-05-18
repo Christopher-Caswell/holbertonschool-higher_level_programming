@@ -46,7 +46,7 @@ class Square(Rectangle):
     def to_dictionary(self):
         """Return the dict, tho"""
         book = dict()
-        items = ["id", "size", "x","y"]
+        items = ["id", "size", "x", "y"]
         for s in items:
             book[s] = getattr(self, s)
         return book
