@@ -143,7 +143,7 @@ class Rectangle(Base):
 #        flter =  dict(zip(keys, [self.dict[k] for k in keys]))
 #        return flter
         book = dict()
-        items = ["id", "width", "height", "x","y"]
+        items = ["id", "width", "height", "x", "y"]
         for s in items:
             book[s] = getattr(self, s)
         return book
