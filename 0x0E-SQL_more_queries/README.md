@@ -1,0 +1,1 @@
+Queries to warm the soul and possibly define permissions
