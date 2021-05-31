@@ -30,5 +30,7 @@ if __name__ == "__main__":
                     ON cities.state_id = states.id
                     WHERE states.name LIKE BINARY %s""", (argv[4],))
     access = cursor.fetchall()
+    x = []
     for iteration in access:
-        print(iteration)
+        x.append(iteration[0])
+    print(", ".join(x))
