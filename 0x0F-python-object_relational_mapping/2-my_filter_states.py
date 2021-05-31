@@ -20,7 +20,7 @@ if __name__ == "__main__":
     import MySQLdb
     db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3])
     cursor = db.cursor()
-    womp = "SELECT * FROM states WHERE name = '" + argv[4] + "'"
+    womp = "SELECT * FROM states WHERE name LIKE BINARY '" + argv[4] + "'"
     # '{}'".format(argv[4])
     cursor.execute(womp)
     access = cursor.fetchall()
