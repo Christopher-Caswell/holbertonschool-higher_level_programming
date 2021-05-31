@@ -17,9 +17,9 @@ if __name__ == "__main__":
     import MySQLdb
     db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3])
     cursor = db.cursor()
-    cursor.execute("""SELECT cities.id, cities.name, states.name 
-                    FROM cities 
-                    INNER JOIN states 
+    cursor.execute("""SELECT cities.id, cities.name, states.name
+                    FROM cities
+                    INNER JOIN states
                     ON cities.state_id = states.id""")
     access = cursor.fetchall()
     for iteration in access:
