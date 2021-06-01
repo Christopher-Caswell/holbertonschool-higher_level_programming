@@ -29,5 +29,5 @@ Base = declarative_base()
 class State(Base):
     """If you need notes, just read the top"""
     __tablename__ = 'states'
-    id = Column(Integer, autoincrement=1, primary_key=1)
+    id = Column(Integer, autoincrement=True, primary_key=True)
     name = Column(String(128), nullable=False)
