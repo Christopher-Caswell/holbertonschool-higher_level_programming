@@ -13,7 +13,7 @@ You can use only one console.log
 You must use a loop (while, for, etc.)
 */
 
-const x = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const x = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 x.forEach(element => {
   console.log(element);
