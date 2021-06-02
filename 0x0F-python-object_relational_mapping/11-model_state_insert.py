@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""
 # Write a script that adds the State object “Louisiana”
 # to the database hbtn_0e_6_usa
 # -
@@ -14,6 +15,7 @@
 # -
 # Print the new states.id after creation
 # Your code should not be executed when imported
+"""
 
 from sys import argv
 from model_state import Base, State

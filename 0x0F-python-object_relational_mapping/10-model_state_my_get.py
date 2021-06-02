@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""
 # Write a script that prints the State object with
 # the name passed as argument from
 # the database hbtn_0e_6_usa
@@ -22,6 +23,7 @@
 # display Not found
 # -
 # Your code should not be executed when imported
+"""
 
 from sys import argv
 from model_state import Base, State

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""
 # Write a script that deletes all State objects
 # with a name containing the letter a
 # from the database hbtn_0e_6_usa
@@ -14,6 +15,7 @@
 # a MySQL server running on localhost at port 3306
 # -
 # Your code should not be executed when imported
+"""
 
 from sys import argv
 from model_state import Base, State
