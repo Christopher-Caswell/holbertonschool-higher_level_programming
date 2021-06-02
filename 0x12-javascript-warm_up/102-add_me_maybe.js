@@ -6,7 +6,7 @@ Prototype: function (number, theFunction)
 You are not allowed to use var
 */
 
-export function addMeMaybe (number, theFunction) {
+exports.addMeMaybe = function (number, theFunction) {
   number += 1;
   theFunction(number);
-}
+};

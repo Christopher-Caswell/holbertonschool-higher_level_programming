@@ -6,8 +6,8 @@ Prototype: function (x, theFunction)
 You are not allowed to use var
 */
 
-export function callMeMoby (x, theFunction) {
+exports.callMeMoby = function (x, theFunction) {
   for (let y = 0; y < x; y++) {
     theFunction();
   }
-}
+};
