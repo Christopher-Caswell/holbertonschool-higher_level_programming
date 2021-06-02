@@ -11,12 +11,10 @@ You are not allowed to use try/catch
 */
 const x = process.argv[2];
 
-if (process.argv[2] === undefined){
+if (process.argv[2] === undefined) {
   console.log('Not a number');
-}
-else if (process.argv[2] % 1 !== 0){
+} else if (process.argv[2] % 1 !== 0) {
   console.log('Not a number');
-}
-else if (process.argv[2] % 1 === 0){
+} else if (process.argv[2] % 1 === 0) {
   console.log('My number: ' + x);
 }
