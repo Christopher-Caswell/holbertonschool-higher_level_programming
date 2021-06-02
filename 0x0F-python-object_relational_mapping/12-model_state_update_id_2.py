@@ -31,4 +31,4 @@ if __name__ == "__main__":
     classobj = classobjdef()
     classobjobj = classobj.query(State).filter(State.id == 2).first()
     classobjobj.name = "New Mexico"
-    classobjobj.commit()
+    classobj.commit()
