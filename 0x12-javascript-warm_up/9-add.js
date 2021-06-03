@@ -21,5 +21,4 @@ if (process.argv.length < 4) {
 } else {
   const res = add(a, b);
   console.log(res);
-  
 }

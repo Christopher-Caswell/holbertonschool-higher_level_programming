@@ -16,7 +16,7 @@ let y;
 if (process.argv[2] % 1 !== 0) {
   console.log('Missing size');
 } else {
-    for (y = 0; y <= z - 1; y++) {
+  for (y = 0; y <= z - 1; y++) {
     console.log(x.repeat(z));
   }
 }
